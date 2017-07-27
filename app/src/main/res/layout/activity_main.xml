@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rizwan.calculator.MainActivity"
+    android:orientation="vertical"
+    android:background= "#212121">
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="310dp"
+        android:layout_height="140dp"
+        android:paddingRight="16dp"
+        android:background = "@drawable/ack2"
+        android:text="@string/viewText"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="right|bottom"
+        android:textColor="#fff9c4"
+
+        />
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/heightSpec"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <TextView
+            style="@style/buttons"
+            android:layout_width="235dp"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/bspace"
+            style="@style/buttons"
+            android:text="\u276E"
+            android:onClick="buttonClick"
+            android:background="#FFEB3B"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/heightSpec"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/buttons"
+            android:text="7"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/buttons"
+            android:text="8"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/buttons"
+            android:text="9"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonSlash"
+            style="@style/buttons"
+            android:text="\u00f7"
+            android:onClick="buttonClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/buttons"
+            android:text="4"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/buttons"
+            android:text="5"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/buttons"
+            android:text="6"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonStar"
+            style="@style/buttons"
+            android:text="\u2715"
+            android:onClick="buttonClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/heightSpec"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/buttons"
+            android:text="1"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/buttons"
+            android:text="2"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/buttons"
+            android:text="3"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/buttons"
+            android:text="\u2013"
+            android:onClick="buttonClick"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        style="@style/heightSpec"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/buttons"
+            android:text="0"
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonPoint"
+            style="@style/buttons"
+            android:text="."
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            style="@style/buttons"
+            android:text="="
+            android:onClick="buttonClick"
+            />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/buttons"
+            android:text="+"
+            android:onClick="buttonClick"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
